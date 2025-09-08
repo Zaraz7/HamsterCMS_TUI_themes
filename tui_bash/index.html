@@ -181,7 +181,7 @@ pre {
             var lastSegment = currentPage.substring(currentPage.lastIndexOf('/') + 1);
             if (lastSegment == 'index' || lastSegment == '') { path = '' }
             else {path = '/' + lastSegment};
-            var formattedSegment = '~' + path + '$';
+            var formattedSegment = '~' + path + '$ ';
             document.getElementById('current-page').innerHTML = formattedSegment + '<span class="blinking-cursor">!</span>';
 			document.title = document.title + formattedSegment;
         });
