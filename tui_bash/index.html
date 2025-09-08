@@ -183,6 +183,7 @@ pre {
             else {path = '/' + lastSegment};
             var formattedSegment = '~' + path + '$';
             document.getElementById('current-page').innerHTML = formattedSegment + '<span class="blinking-cursor">!</span>';
+			document.title = document.title + formattedSegment;
         });
     </script>
 </div>
