@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zaraz7 mirror</title>
-	<style>
+    <title>My pseudo TUI site</title>
+    <style>
 html, body {
   padding: 0;
   margin: 0;
@@ -32,7 +32,7 @@ hr { color: #ffffff; }
   position: relative; 
 }
 
-.dos8 .win:before, .dos8 .win:after {
+.tui-grey .win:before, .tui-grey .win:after {
   content: " ";
   position: absolute;
   z-index: 1;
@@ -41,13 +41,13 @@ hr { color: #ffffff; }
   left: 20px;
   right: 20px;
 }
-.dos8 .win:after {
+.tui-grey .win:after {
   top: 22px;
   bottom: 22px;
   left: 22px;
   right: 22px;
 }
-.dos8 .win .caption {
+.tui-grey .win .caption {
   position: absolute;
   top: 14px;
   left: 0;
@@ -56,29 +56,29 @@ hr { color: #ffffff; }
   z-index: 2;
 }
 
-.dos8 .win .caption .title {
+.tui-grey .win .caption .title {
   display: inline-block;
   padding-left: 0.8em;
   padding-right: 0.6em;
 }
-.dos8 .win strong {
+.tui-grey .win strong {
   font-weight: normal;
 }
-.dos8 .win.dos {
+.tui-grey .win.tui {
   color: #ffffff;
   background-color: #202020;
 }
-.dos8 .win.dos:before, .dos8 .win.dos:after {
+.tui-grey .win.tui:before, .tui-grey .win.tui:after {
   border-color: #ffffff;
 }
-.dos8 .win.dos .caption .title {
+.tui-grey .win.tui .caption .title {
   background-color: #202020;
 }
-.dos8 .win.dos a {
+.tui-grey .win.tui a {
   color: #2ABA27;
     background-color: rgb(32, 32, 32);
 }
-.dos8 .win.dos strong {
+.tui-grey .win.tui strong {
   color: #ffffff;
 }
 
@@ -109,7 +109,7 @@ hr { color: #ffffff; }
 .horizontal-menu,
 .caption,
 .screen,
-.dos8,
+.tui-grey,
 .win {
   position: relative; 
 }
@@ -147,10 +147,6 @@ hr { color: #ffffff; }
 	line-height: 1;
 }
 
-.fleft {float: left;}
-.fright {float: right;}
-.center {margin: 0 auto;}
-
 @keyframes blink {
     from, to {
         visibility: hidden;
@@ -158,9 +154,6 @@ hr { color: #ffffff; }
     50% {
         visibility: visible;
     }
-}
-.clear {
-	clear: both;
 }
 
 @media (max-width: 740px) {
@@ -173,19 +166,20 @@ hr { color: #ffffff; }
 	min-width: unset;
 	max-width: 100%;
   }
-  .fleft, .fright {float: none;}
   body {background-color: #202020;}
 }
 </style>
 </head>
 <body>
-  <style>.glink {color: #2AFA27 !important}</style>
+  <!--Translator begin-->
+<style>.glink{color:#2AFA27!important}.gt-current-lang::before{content:'['!important}.gt-current-lang::after{content:']'!important}</style>
   <div class="gtranslate_wrapper"></div>
   <script>window.gtranslateSettings = {"default_language":"ru","native_language_names":true,"detect_browser_language":true,"languages":["ru","fr","it","es","de","en","ja","zh-CN"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"right","vertical_position":"bottom"}</script>
   <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
-  <div class="screen dos8">
-    <div class="win dos">
-      <b><div class="horizontal-menu notranslate">[[horizontal_menu.txt]]</div>
+  <!--Translator end-->
+  <div class="screen tui-grey">
+    <div class="win tui">
+      <b><div class="horizontal-menu notranslate">[[NAVIGATION]]</div>
       <hr></b>
       <div class="contents">[[CONTENTS]]</div>
       <br>
