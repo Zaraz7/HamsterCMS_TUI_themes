@@ -7,5 +7,5 @@ My pseudo TUI themes for [HamsterCMS](http://old.net.eu.org/). They are adapted 
 - Imitation of a bash prompt. 
 ### `tui` 
 - More minimalist.
-- Includes a script for automatic translation into 8 languages.
+- Includes a script for automatic translation into 8 languages ("en","fr","it","es","de","ru","ja","zh-CN").
 
