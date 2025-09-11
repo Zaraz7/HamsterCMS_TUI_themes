@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -131,6 +131,21 @@ hr { color: #ffffff; }
   z-index: 2;
 }
 
+.blinking-cursor {
+    font-weight: bold;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #000000;
+    animation: blink 1s step-end infinite;
+}
+
+pre {
+	font-family: 'Courier New', monospace;
+	margin: 20px auto;
+	white-space: pre;
+	line-height: 1;
+}
+
 @media (max-width: 740px) {
   pre {
 	box-sizing: border-box;
@@ -146,6 +161,12 @@ hr { color: #ffffff; }
 </style>
 </head>
 <body>
+  <!--Translator begin-->
+<style>.glink{color:#2AFA27!important}.gt-current-lang::before{content:'['!important}.gt-current-lang::after{content:']'!important}</style>
+  <div class="gtranslate_wrapper"></div>
+  <script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"languages":["en","fr","it","es","de","ru","ja","zh-CN"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"right","vertical_position":"bottom"}</script>
+  <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
+  <!--Translator end-->
   <div class="screen tui-grey">
     <div class="win tui">
       <b><div class="horizontal-menu notranslate">[[NAVIGATION]]</div>
