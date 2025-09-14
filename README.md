@@ -2,11 +2,6 @@
 Pseudo TUI (Text user interface) themes for [HamsterCMS](http://old.net.eu.org/) and [Web 1.0 Hosting](https://web1.0hosting.net/). They are adapted for modern smartphones and terminal browsers like Elinks.
 
 ## List of themes
-
-### `tui` 
-![tui](https://github.com/user-attachments/assets/6ea87101-3d2a-4bcb-9000-27bc47be68d2)
-- Minimalism.
-- No JavaScript.
  
 ### `tui-bash`
 ![tui_bash](https://github.com/user-attachments/assets/2d789f53-571a-4fa3-8ea1-7603ea7e77fe)
