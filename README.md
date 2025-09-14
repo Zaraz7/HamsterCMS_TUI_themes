@@ -13,6 +13,6 @@ Pseudo TUI themes for [HamsterCMS](http://old.net.eu.org/). They are adapted for
 
 ### `tui-gimmicks`
 - Dynamic title and navigation depending on the viewed page. 
-- Script for automatic translation into 8 languages (you can change them).
+- [Widget for automatic translation](https://gtranslate.io/website-translator-widget) into 8 languages (you can change them).
 - Styles for guestbook.
 
