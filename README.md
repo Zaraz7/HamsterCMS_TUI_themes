@@ -1,5 +1,5 @@
 # HamsterCMS TUI themes
-Pseudo TUI themes for [HamsterCMS](http://old.net.eu.org/) and [Web 1.0 Hosting](https://web1.0hosting.net/). They are adapted for modern smartphones and terminal browsers like Elinks.
+Pseudo TUI (Text user interface) themes for [HamsterCMS](http://old.net.eu.org/) and [Web 1.0 Hosting](https://web1.0hosting.net/). They are adapted for modern smartphones and terminal browsers like Elinks.
 
 ## List of themes
 
