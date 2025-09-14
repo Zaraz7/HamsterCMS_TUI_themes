@@ -4,7 +4,7 @@ Pseudo TUI (Text user interface) themes for [HamsterCMS](http://old.net.eu.org/)
 ## List of themes
 
 ### `tui` 
-![tui](https://github.com/user-attachments/assets/8b802d36-3ba0-48ec-9e68-f6908edb46a5)
+![tui](https://github.com/user-attachments/assets/6ea87101-3d2a-4bcb-9000-27bc47be68d2)
 - Minimalism.
 - No JavaScript.
  
