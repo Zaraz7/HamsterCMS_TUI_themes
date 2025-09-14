@@ -14,8 +14,8 @@ Pseudo TUI themes for [HamsterCMS](http://old.net.eu.org/) and [Web 1.0 Hosting]
 - Imitation of a bash prompt. 
 
 ### `tui-gimmicks`
-![tui_gimmiks](https://github.com/user-attachments/assets/15c39c89-6a31-45c6-a35c-9cbc7336bb86)
+![tui_gimmiks](https://github.com/user-attachments/assets/63745909-9415-402a-8598-937036894761)
 - Dynamic title and navigation depending on the viewed page. 
-- Fully customizable navigation (`includes/list.txt`).
+- Fully customizable navigation ( `includes/list.txt` ).
 - [Widget for automatic translation](https://gtranslate.io/website-translator-widget) into 8 languages (you can change them).
 - Styles for guestbook.
