@@ -1,0 +1,6 @@
+<a href="/"id="l_index">$HOME</a>
+<a href="/internet"id="l_internet">internet/</a>
+<a href="/msdos"id="l_msdos">msdos/</a>
+<a href="/myfiles"id="l_myfiles">myfiles/</a>
+<a href="/news"id="l_news">news/</a>
+<a href="/notepad"id="l_notepad">notepad/</a>

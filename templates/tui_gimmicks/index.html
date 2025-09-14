@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My pseudo TUI site</title>
+    <title>tui@gimmicks</title>
     <style>
 html, body {
   padding: 0;
@@ -16,14 +16,12 @@ body {
   background: #000000;
 }
 hr { color: #ffffff; }
-
 .screen {
   padding: 0;
 }
 .screen:first-child {
   border-top: none;
 }
-
 .win {
   max-width: 65%;
   min-width: 430px;
@@ -31,7 +29,6 @@ hr { color: #ffffff; }
   padding: 50px 50px;
   position: relative; 
 }
-
 .tui-grey .win:before, .tui-grey .win:after {
   content: " ";
   position: absolute;
@@ -55,7 +52,6 @@ hr { color: #ffffff; }
   text-align: center;
   z-index: 2;
 }
-
 .tui-grey .win .caption .title {
   display: inline-block;
   padding-left: 0.8em;
@@ -74,14 +70,13 @@ hr { color: #ffffff; }
 .tui-grey .win.tui .caption .title {
   background-color: #202020;
 }
-.tui-grey .win.tui a {
+a {
   color: #2ABA27;
-    background-color: #202020;
+  background-color: #202020;
 }
 .tui-grey .win.tui strong {
   color: #ffffff;
 }
-
 .horizontal-menu {
   display: flex;
   justify-content: space-around;
@@ -90,21 +85,21 @@ hr { color: #ffffff; }
   padding: 0px 0;
   color: white;
 }
-
 .horizontal-menu * {
   margin: 0px;
 }
 
 .horizontal-menu a {
-  text-decoration: none;
   padding: 0px 15px; 
 }
-
-.horizontal-menu a:hover {
-  color: #2AFA27; 
-
+a, a:hover {
+    text-decoration: none;
 }
+a:hover, .l_selected {
 
+    background-color: #2ABA27;
+    color: #000000;
+}
 .horizontal-menu,
 .caption,
 .screen,
@@ -112,11 +107,9 @@ hr { color: #ffffff; }
 .win {
   position: relative; 
 }
-
 .horizontal-menu {
   z-index: 2; 
 }
-
 .caption {
   z-index: 2; 
 }
@@ -131,19 +124,37 @@ hr { color: #ffffff; }
   z-index: 2;
 }
 
-.blinking-cursor {
-    font-weight: bold;
-    font-size: 1em;
-    color: #ffffff;
-    background-color: #000000;
-    animation: blink 1s step-end infinite;
-}
+.gt_switcher_wrapper{background-color:#202020!important}
+.glink{color:#2AFA27!important}
+.gt-current-lang::before{content:'['!important}
+.gt-current-lang::after{content:']'!important}
+.glink:hover{color:#202020!important}
 
 pre {
 	font-family: 'Courier New', monospace;
 	margin: 20px auto;
 	white-space: pre;
 	line-height: 1;
+}
+
+input[type="submit"] {
+    border-style: none solid none solid !important;
+    border-color: #FFF !important;
+    color: #FFF !important;
+    background-color: #202020 !important
+}
+input[type="text"], input[type="url"], {
+    background-color: #202020;
+    color: #FFFFFF;
+    border-style: none none solid none !important;
+    border-color: #FFFFFF;
+}
+textarea, input[type="submit"], input[type="text"], input[type="url"] {
+    font-family: 'Courier New', monospace ;
+    font-size: 16px;
+}
+a, a:hover {
+    text-decoration: none;
 }
 
 @media (max-width: 740px) {
@@ -161,15 +172,26 @@ pre {
 </style>
 </head>
 <body>
-  <!--Translator begin-->
-<style>.glink{color:#2AFA27!important}.gt-current-lang::before{content:'['!important}.gt-current-lang::after{content:']'!important}</style>
+  <script>
+	document.addEventListener('DOMContentLoaded', function() {
+		var currentPage = window.location.pathname;
+		var lastSegment = currentPage.substring(currentPage.lastIndexOf('/') + 1);
+		var selectedPage = null;
+		if (lastSegment == 'index' || lastSegment == '') { selectedPage = document.getElementById('l_index'); 
+			path = '' }
+		else { selectedPage = document.getElementById('l_'+lastSegment); 
+			path = '/' + lastSegment};
+		selectedPage.classList.add('l_selected');
+		var formattedSegment = '~' + path + '$ ';
+		document.title = document.title + formattedSegment;
+	});
+  </script>
   <div class="gtranslate_wrapper"></div>
   <script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"languages":["en","fr","it","es","de","ru","ja","zh-CN"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"right","vertical_position":"bottom"}</script>
   <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
-  <!--Translator end-->
   <div class="screen tui-grey">
     <div class="win tui">
-      <b><div class="horizontal-menu notranslate">[[NAVIGATION]]</div>
+      <b><div class="horizontal-menu notranslate">[[list.txt]]</div>
       <hr></b>
       <div class="contents">[[CONTENTS]]</div>
       <br>
