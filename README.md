@@ -29,4 +29,5 @@ I invite you to visit the hosting that runs on this CMS
 [http://w10.host](http://w10.host)
 
 works with both old and new technologies, and backward compatible
+
 Enjoy your use.
